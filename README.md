@@ -1,0 +1,1 @@
+Created as a solo project for Module 3 of the Scrimba FrontEnd Developer Career Path.
