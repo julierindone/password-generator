@@ -1,66 +1,33 @@
 body {
+  background: #333;
   font-family: 'Karla', sans-serif;
-  color: #333;
-  /* text-shadow: 0px 0px 1px #849B9B; */
+  color: #111;
+  font-weight: 500;
   margin: 0;
+}
+
+.app-wrapper-wrapper {
+  border: 5px solid #d1e6e7;
+  width: 55%;
+  max-width: 550px;
+  min-width: 250px;
+  margin: 1.5rem auto;
+
 }
 
 .app-wrapper {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  /* justify-content: center; */
-  background-color: #d1e6e7;
-  width: 50%;
-  height: 350px;
-  padding: 2.5rem 3rem;
-  margin: 2rem auto;
+  background: #d1e6e7;
+  border: 2px solid #750000;
+  padding: 2.8rem 1rem 2rem 1rem;
 }
 
-.left-align-box {}
-
-.generator-wrapper {
-  margin-top: 2.5rem;
-}
-
-button {
-  background: #750000;
-  color: #E9EBF8;
-  font-size: 1rem;
-  font-weight: 500;
-  width: 180px;
-  height: 46px;
-  border: none;
-  border-radius: .4rem;
-  padding: 2px 3px 3px 3px;
-}
-
-.passwords-wrapper {
-  /* display: flex; */
-  display: none;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
-}
-
-.password-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  color: #E9EBF8;
-  font-weight: 500;
-  width: 190px;
-  height: 38px;
-  background: black;
-  border-radius: .3rem;
-  padding: 2px 3px 3px 3px;
-  margin: 0;
+.title-wrapper {
+  padding-left: .5rem;
 }
 
 .title {
-  color: #750000;
-  font-size: 2.5rem;
+  color: #000;
+  font-size: 2.25rem;
   font-weight: 800;
   line-height: 1.0;
   margin-top: 0;
@@ -69,11 +36,53 @@ button {
 
 .red {
   color: #750000;
-  text-shadow: none;
+  text-shadow: 0px 0px 0px #590000;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.generator-wrapper {
+  margin: 1.6rem .5rem 0 .5rem;
+}
+
+button {
+  background: #750000;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 170px;
+  height: 36px;
+  border: none;
+  border-radius: .4rem;
+  padding: 0 0 2px 0;
+}
+
+.passwords-wrapper {
+  display: inline-flex;
+  flex-wrap: wrap;
+  display: none;
+  justify-content: center;
+  gap: 8%;
+}
+
+.password-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #111;
+  font-family: Consolas, 'Segoe UI', Courier, monospace;
+  font-size: .9rem;
+  height: 34px;
+  border-radius: .3rem;
+  padding: 0px 18px;
+  margin: 0 0 1.2rem 0;
 }
 
 hr {
-  margin: 1.8rem auto;
-  /* width: 98%; */
-  color: #E9EBF8;
+  margin: 1.5rem auto;
+  width: 95%;
+  color: #88888869;
 }
