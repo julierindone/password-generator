@@ -1,7 +1,7 @@
 body {
   /* background: #333; */
   font-family: 'Karla', sans-serif;
-  color: #111;
+  color: #000;
   font-weight: 500;
   margin: 0;
 }
@@ -48,21 +48,40 @@ p {
 }
 
 label {
-  /* color: green; */
   font-size: .82rem;
 }
 
 button {
-  background: #750000;
   color: white;
+  background-image: 
+    linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  background-color: rgba(117, 0, 0, 0.8);
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
   font-size: 1rem;
   font-weight: 500;
   width: 170px;
-  height: 36px;
+  height: 34px;
   border: none;
   border-radius: .4rem;
   padding: 0 0 2px 0;
-  margin-top: .2rem;
+}
+
+#char-choice {
+  margin-top: .41rem;
+}
+
+button:hover {
+  background: rgba(151, 0, 0, .81);
+  background-image: 
+    linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+}
+
+.button:active {
+  background-color: #7f1d1d;
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
 }
 
 .passwords-wrapper {
@@ -78,7 +97,7 @@ button {
   justify-content: center;
   align-items: center;
   color: white;
-  background: #111;
+  background: #101010;
   font-family: Consolas, 'Segoe UI', Courier, monospace;
   font-size: .9rem;
   height: 34px;
