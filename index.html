@@ -24,10 +24,10 @@
       </div>
 
       <div class="generator-wrapper">
-        <input type="checkbox" id="char-choice" onclick="excludeSpecialChars()">
-        <label for="char-choice">limit characters to letters & numbers</label>
+        <button class="button" id="generate-passwords" onclick="displayPasswords()">generate passwords</button>
         <br>
-        <button id="generate-passwords" onclick="renderPasswords()">generate passwords</button>
+        <input type="checkbox" id="char-choice" onclick="excludeSpecialChars()">
+        <label for="char-choice">letters & numbers only</label>
         <div class="passwords-wrapper" id="boxes">
           <hr>
           <p class="password-box" id="pw-one"></p>

@@ -25,7 +25,7 @@ let copyPasswordOne = document.getElementById("copy-pw-one")
 let copyPasswordTwo = document.getElementById("copy-pw-two")
 
 
-function renderPasswords() {
+function displayPasswords() {
   // display the boxes:
   passwordBoxes.style.display = "flex"
 
@@ -56,7 +56,6 @@ function makePassword() {
 
 function excludeSpecialChars() {
   console.log("clicked")
-  // i think i can use this value 
   excludeSpecial = true
   return excludeSpecial
 }
