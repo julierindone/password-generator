@@ -16,8 +16,6 @@ let passwordTwo = ""
 let passwordTwoEl = document.getElementById("pw-two")
 
 //toggle any chars/no special characters
-// TODO: for some reason this works until i toggle it OFF... the specials don't turn back on.
-let excludeSpecial = false
 let charChoiceEl = document.getElementById("char-choice")
 
 // saving for copying passwords but haven't started this yet
@@ -39,7 +37,7 @@ function displayPasswords() {
 }
 
 function makePassword() {
-  if (excludeSpecial === true) {
+  if (charChoiceEl.checked) {
     console.log(`special characters will be excluded.`)
     characters = lettersAndNumbers
   } else {
@@ -52,8 +50,4 @@ function makePassword() {
     pw += characters[index]
   }
   return pw
-}
-
-function excludeSpecialChars() {
-  excludeSpecial = charChoiceEl.checked
 }
