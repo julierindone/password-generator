@@ -6,13 +6,24 @@ body {
   margin: 0;
 }
 
-.app-wrapper-wrapper {
-  border: 5px solid #d1e6e7;
-  width: 55%;
-  max-width: 650px;
-  min-width: 250px;
-  margin: 1.5rem auto;
+/* laptops/tablets */
+@media only screen and (min-width: 600px) {
+  .app-wrapper-wrapper {
+    width: 55%;
+    max-width: 650px;
+    min-width: 350px;
+    border: 5px solid #d1e6e7;
+    margin: 1.5rem auto;
+  }
+}
 
+/* phones */
+@media only screen and (max-width: 599px) {
+  .app-wrapper-wrapper {
+    border: 5px solid #d1e6e7;
+    /* max-width: 225px; */
+    /* max-width: 250px; */
+  }
 }
 
 .app-wrapper {
@@ -44,7 +55,7 @@ p {
 }
 
 .generator-wrapper {
-  margin: 1.4rem .5rem 0 .5rem;
+  margin: 1.3rem .5rem 0 .5rem;
 }
 
 label {
@@ -53,9 +64,12 @@ label {
 
 button {
   color: white;
-  background-image: 
-    linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-  background-color: rgba(117, 0, 0, 0.8);
+  background-color: #750000;
+  background-image:
+    linear-gradient(to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0));
   box-shadow:
     inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -68,14 +82,14 @@ button {
   padding: 0 0 2px 0;
 }
 
-#char-choice {
-  margin-top: .41rem;
-}
-
-button:hover {
+/* hover isn't working, not sure why */
+.button:hover {
   background: rgba(151, 0, 0, .81);
-  background-image: 
-    linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  background-image:
+    linear-gradient(to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0));
 }
 
 .button:active {
@@ -83,6 +97,11 @@ button:hover {
   box-shadow: 0 4px #666;
   transform: translateY(4px);
 }
+
+#char-choice {
+  margin-top: .35rem;
+}
+
 
 .passwords-wrapper {
   display: inline-flex;
@@ -97,7 +116,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   color: white;
-  background: #101010;
+  background: #111;
   font-family: Consolas, 'Segoe UI', Courier, monospace;
   font-size: .9rem;
   height: 34px;
