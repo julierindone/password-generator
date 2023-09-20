@@ -55,7 +55,5 @@ function makePassword() {
 }
 
 function excludeSpecialChars() {
-  console.log("clicked")
-  excludeSpecial = true
-  return excludeSpecial
+  excludeSpecial = charChoiceEl.checked
 }
