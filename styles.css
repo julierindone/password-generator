@@ -9,20 +9,25 @@ body {
 /* laptops/tablets */
 @media only screen and (min-width: 600px) {
   .app-wrapper-wrapper {
-    width: 55%;
+    width: 65%;
     max-width: 650px;
-    min-width: 350px;
+    min-width: 300px;
     border: 5px solid #d1e6e7;
     margin: 1.5rem auto;
+    font-size: 20px;
   }
 }
 
 /* phones */
 @media only screen and (max-width: 599px) {
+  html {
+    font-size: 20px;
+  }
   .app-wrapper-wrapper {
     border: 5px solid #d1e6e7;
-    /* max-width: 225px; */
-    /* max-width: 250px; */
+  }
+  .app-wrapper {
+    height: 100vh;
   }
 }
 
@@ -38,7 +43,7 @@ body {
 
 .title {
   color: #000;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
   line-height: 1.0;
   margin-top: 0;
@@ -51,7 +56,7 @@ body {
 }
 
 p {
-  margin-top: 10px;
+  margin-top: .5rem;
 }
 
 .generator-wrapper {
@@ -59,7 +64,7 @@ p {
 }
 
 label {
-  font-size: .82rem;
+  font-size: .9rem;
 }
 
 button {
@@ -73,16 +78,15 @@ button {
   box-shadow:
     inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 500;
-  width: 170px;
-  height: 34px;
+  /* width: 170px; */
+  /* height: 38px; */
   border: none;
   border-radius: .4rem;
-  padding: 0 0 2px 0;
+  padding: 10px 15px 10px 15px;
 }
 
-/* hover isn't working, not sure why */
 .button:hover {
   background: rgba(151, 0, 0, .81);
   background-image:
@@ -102,7 +106,6 @@ button {
   margin-top: .35rem;
 }
 
-
 .passwords-wrapper {
   display: inline-flex;
   flex-wrap: wrap;
@@ -111,18 +114,30 @@ button {
   gap: 8%;
 }
 
-.password-box {
+.pw-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  margin-bottom: 20px;
+}
+
+.password-box {
   background: #111;
+  color: white;
+  text-align: center;
   font-family: Consolas, 'Segoe UI', Courier, monospace;
   font-size: .9rem;
-  height: 34px;
-  border-radius: .3rem;
-  padding: 0px 18px;
-  margin: 0 0 .8rem 0;
+  width: 180px;
+  padding: 5.5% 4% 0% 6%;
+  border-radius:  .3rem 0 0 .3rem;
+  margin: 0;
+}
+
+.copy-btn {
+  display: flex;
+  background: #750000;
+  border-radius: 0 .3rem .3rem 0;
+  box-shadow: none;
+  padding: 6px 8px 6px 8px;
+  margin: 0
 }
 
 hr {
