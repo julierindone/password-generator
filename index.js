@@ -18,11 +18,6 @@ let passwordTwoEl = document.getElementById("pw-two")
 //toggle any chars/no special characters
 let charChoiceEl = document.getElementById("char-choice")
 
-// saving for copying passwords but haven't started this yet
-let copyPasswordOne = document.getElementById("copy-pw-one")
-let copyPasswordTwo = document.getElementById("copy-pw-two")
-
-
 function displayPasswords() {
   // display the boxes:
   passwordBoxes.style.display = "flex"
@@ -50,4 +45,9 @@ function makePassword() {
     pw += characters[index]
   }
   return pw
+}
+
+function copyPassword(pwToCopy) {
+  navigator.clipboard.writeText(pwToCopy);
+  alert("Copied the text: " + pwToCopy);
 }
